@@ -1,7 +1,7 @@
 require 'sonar'
 
 RSpec.describe Sonar do
-  describe '.depth_change_rate' do
+  describe '.depth_increases' do
     let(:measurements) do
       [
         199,
@@ -18,11 +18,7 @@ RSpec.describe Sonar do
     end
 
     it 'gets the depth change rate' do
-      expect(described_class.depth_change_rate(measurements)).to eq(7)
-    end
-
-    it 'handles a negative change_rate' do
-      expect(described_class.depth_change_rate(measurements.reverse)).to eq(-7)
+      expect(described_class.depth_increases(measurements)).to eq(7)
     end
   end
 end
