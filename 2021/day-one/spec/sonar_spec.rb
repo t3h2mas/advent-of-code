@@ -27,4 +27,14 @@ RSpec.describe Sonar do
       expect(described_class.depth_increases_over_window(measurements)).to eq(5)
     end
   end
+
+  describe '.depth_increases_over_window_two' do
+    it 'gets the depth change rate with a window size of 1' do
+      expect(described_class.depth_increases_over_window_two(measurements, 1)).to eq(7)
+    end
+
+    it 'gets the depth change rate with a window size of 3' do
+      expect(described_class.depth_increases_over_window_two(measurements, 3)).to eq(5)
+    end
+  end
 end
