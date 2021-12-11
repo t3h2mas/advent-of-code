@@ -41,6 +41,6 @@ RSpec.describe Bingo do
       break if game.won?
     end
 
-    expect(game.winner.unmarked.sum).to eq(188)
+    expect(game.wins[0][:card].unmarked.sum).to eq(188)
   end
 end

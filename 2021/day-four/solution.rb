@@ -11,11 +11,13 @@ end
 puts 'Day four part one'
 game = Bingo.new(cards)
 
-to_call.each do |number|
-  game.mark(number)
+to_call.each { |number| game.mark(number) }
 
-  if game.won?
-    puts "solution: #{game.winner.unmarked.sum * number}"
-    break
-  end
-end
+first_win = game.wins.first
+last_win = game.wins.last
+
+puts "solution: #{first_win[:card].unmarked.sum * first_win[:winning_number]}"
+
+puts 'Day four part two'
+
+puts "solution: #{last_win[:card].unmarked.sum * last_win[:winning_number]}"

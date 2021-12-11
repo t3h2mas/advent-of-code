@@ -2,25 +2,26 @@ require 'set'
 
 class Bingo
 
-  attr_reader :winner
+  attr_reader :wins
 
   def initialize(cards)
     @cards = cards.map { |c| Card.new(c) }
-    @winner = nil
+
+    @wins = []
   end
 
   def mark(number)
     @cards.each do |card|
+      # skip already won cards
+      next if card.won?
+
       card.mark(number)
-      if card.won?
-        @winner = card
-        break
-      end
+      @wins << { card: card, winning_number: number } if card.won?
     end
   end
 
   def won?
-    @winner != nil
+    @wins.length.positive?
   end
 end
 
