@@ -1,20 +1,10 @@
 class Vents
-  def initialize(input)
+  def initialize(segments)
     @points = {}
 
-    point_pairs = input.split("\n").map { |line| line.split(' -> ').map { |pair| pair.split(',').map(&:to_i) }.sort }
-
-    point_pairs.each do |pair|
-      start_point = pair.first
-      end_point = pair.last
-
-      start_x = start_point[0]
-      start_y = start_point[1]
-
-      end_x = end_point[0]
-      end_y = end_point[1]
-
-      next if start_x != end_x && start_y != end_y
+    segments.each do |segment|
+      start_x, start_y = segment.first
+      end_x, end_y = segment.last
 
       (start_x..end_x).each do |segment_x|
         (start_y..end_y).each do |segment_y|
