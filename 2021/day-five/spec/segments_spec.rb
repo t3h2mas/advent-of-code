@@ -34,4 +34,13 @@ RSpec.describe Segments do
       it 'does'
     end
   end
+  describe 'diagonal?' do
+    it 'does' do
+      expect(Segments.diagonal?([[1, 1], [3, 3]])).to eq(true)
+
+      expect(Segments.diagonal?([[9, 7], [7, 9]])).to eq(true)
+      expect(Segments.diagonal?([[1, 7], [7, 9]])).to eq(false)
+    end
+  end
 end
+
