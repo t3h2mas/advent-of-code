@@ -1,17 +1,17 @@
-require_relative 'lib/lantern_fish'
+require_relative 'lib/lantern_fish_school'
 
 input = File.read('./input.txt').split(',').map(&:to_i)
 
 puts 'Day six part one: '
 
-fish = LanternFish.new(input)
+fish = LanternFishSchool.new(input)
 
 fish.cycle(80)
 
-puts fish.school.count
+puts fish.count
 
 puts 'Day six part two: '
 
 fish.cycle(256 - 80)
 
-puts fish.school.count
+puts fish.count
