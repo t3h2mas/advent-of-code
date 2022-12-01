@@ -1,0 +1,6 @@
+github.com/google/go-cmp v0.5.4 h1:L8R9j+yAqZuZjsqh/z+F1NCffTKKLShY6zXTItVIZ8M=
+github.com/google/go-cmp v0.5.4/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
+github.com/t3h2mas/advent-2020 v0.0.0-20201222002904-7147773bba1b h1:bsHWw/xvsOU2fF891BIbUqPHrdzAKeGPNq3v60/c7mE=
+github.com/t3h2mas/advent-2020/input v0.0.0-20201222002904-7147773bba1b h1:eXxHOuVmuEgpkVbeBnT9OOCquIH+n8KZzc2GJ7lkEPs=
+github.com/t3h2mas/advent-2020/input v0.0.0-20201222002904-7147773bba1b/go.mod h1:8wM/GbMtNqqS2IH3spyrd9g+trlDzb64rcg06dISgUc=
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=

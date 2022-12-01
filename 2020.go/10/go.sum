@@ -1,0 +1,5 @@
+github.com/t3h2mas/advent-2020 v0.0.0-20201210165850-e96b1bb22bb0 h1:3XkuHD0oH6JsHlEFvmPnisU5/mUHh7YDkbdGfb23y1E=
+github.com/t3h2mas/advent-2020/input v0.0.0-20201210165850-e96b1bb22bb0 h1:shb3L9PErCCNE/Oy66Bgy5Wqh0JZe6fidtlt1Zic8kE=
+github.com/t3h2mas/advent-2020/input v0.0.0-20201210165850-e96b1bb22bb0/go.mod h1:8wM/GbMtNqqS2IH3spyrd9g+trlDzb64rcg06dISgUc=
+github.com/t3h2mas/advent-2020/types v0.0.0-20201211163330-b08669c0177a h1:w6L9gBRboQjUmwU2cK8QmNm0SENFNbjgQkn/l4afTR0=
+github.com/t3h2mas/advent-2020/types v0.0.0-20201211163330-b08669c0177a/go.mod h1:cTZnUj59R0SzBmFo2+8Al5oGg2olATBusxd12IlGsGU=
