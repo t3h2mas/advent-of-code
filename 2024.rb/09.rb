@@ -1,5 +1,3 @@
-require 'bigdecimal'
-
 input = '2333133121414131402'
 
 input = '12345'
@@ -16,16 +14,18 @@ end
 
 files
 
-storage = StringIO.new
+storage = []
 
 files.each do |file|
-  storage << file.id.to_s * file.size
-  storage << '.' * file.free
+  file.size.times do
+    storage << file.id
+  end
+  file.free.times do 
+    storage << '.'
+  end
 end;
 
-storage.string
-
-res = storage.string.dup;
+res = storage.dup;
 
 lo = 0
 hi = res.length - 1
@@ -51,8 +51,6 @@ res[lo], res[hi] = res[hi], res[lo]
 
 checksum = 0
 
-res.chars.each.with_index { |id, i| break if id == '.'; checksum += id.to_i * i };
+res.each.with_index { |id, i| break if id == '.'; checksum += id.to_i * i };
 
 checksum.to_i
-
-res.index('.')
